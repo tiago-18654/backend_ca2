@@ -1,0 +1,60 @@
+{
+  "name": "databoss",
+  "version": "1.0.0",
+  "description": "MERN full stack demo",
+  "main": "src/server/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "npm run build && node src/server/index.js",
+    "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
+    "server": "nodemon src/server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Erika Volodko",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel-polyfill": "^6.26.0",
+    "bulma": "^0.8.2",
+    "express": "^4.17.1",
+    "kill-port": "^1.6.0",
+    "mongodb": "^3.5.6",
+    "react": "^16.13.1",
+    "react-bulma-components": "^3.4.0",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "webpack": "^4.42.1",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.1.0",
+    "css-loader": "^3.5.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.2.0",
+    "nodemon": "^2.0.3",
+    "style-loader": "^1.1.4",
+    "url-loader": "^4.1.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "heroku-run-build-script": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiago-18654/backend_ca2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tiago-18654/backend_ca2/issues"
+  },
+  "homepage": "https://github.com/tiago-18654/backend_ca2#readme"
+}

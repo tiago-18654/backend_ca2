@@ -1,0 +1,11 @@
+#form{
+    width: 500px;
+}
+
+footer.has-background-primary {
+    background-color: #ffd83d !important;
+}
+
+title.has-text-primary {
+    color: #0a0a0a !important;
+}
